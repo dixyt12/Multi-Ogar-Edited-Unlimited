@@ -316,7 +316,7 @@ GameServer.prototype.onClientSocketOpen = function(ws) {
     this.clients.push(ws);
     
     // Check for external minions
-    this.checkMinion(ws);
+    //this.checkMinion(ws);
 };
 
 GameServer.prototype.checkMinion = function(ws) {
@@ -748,6 +748,10 @@ GameServer.prototype.resolveCollision = function(m) {
     if (m.d >= check._size - cell._size / div) {
         return; // too far => can't eat
     }
+      if (!check.canEat(cell) || cell.getAge() < 2) {
+    // check doesn't want to eat
+    return;
+}
 
     // collision owned => ignore, resolve, or remerge
     if (cell.owner && cell.owner == check.owner) {
