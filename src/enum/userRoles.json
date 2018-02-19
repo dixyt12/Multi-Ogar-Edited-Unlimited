@@ -1,15 +1,15 @@
 [
     { 
-		"username":"ADMIN",
-        "password":"ADMIN",
+		"username":"dix",
+        "password":"2480",
         "role":"ADMIN",
-        "name":"Local Administrator",
+        "name":"admin",
 		"level":"100",
 		"exp":"0"
     },
     { 
-		"username":"Moder",
-        "password":"Moder",
+		"username":"dix1",
+        "password":"2480",
         "role":"MODER",
         "name":"Local Moderator",
 		"level":"100",
